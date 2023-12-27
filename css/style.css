@@ -1,0 +1,36 @@
+body{
+    background-color: #F7ECDE;
+}
+
+
+.line{
+    border-style: dotted;
+    border-left: 0;
+    border-right: 0;
+    border-width: 2px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    color: #352e28;
+    position: relative;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    height:33% ;
+    width:21%;
+    bottom:12%;
+    z-index: -1;
+    background-color: #FEC260;
+    transition: height 350ms;
+}
+h1:hover::before{
+    height:80% ;
+
+}
+h2{
+    color: #B2AC49;
+}
